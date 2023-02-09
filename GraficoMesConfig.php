@@ -1,5 +1,5 @@
 <?php
-
+/* Arquivo de configurações do backend do gráfico em PHP */
 $dataGet = trim($_GET['data']);//resgata data via get
 $dataGet2 = date('Y-m-d', strtotime($dataGet)); //data com ano-mes-dia
 $dataGet3 = date('Y-m', strtotime($dataGet)); //data com ano-mes
@@ -61,9 +61,6 @@ while ($dia < $numDias) {
     $bar2  = $bar2 - 2;
   }
  
-  
-  
-
   //alimenta o array com as demandas do gráfico
   array_push($listaGraphBar1,$bar1);
   array_push($listaGraphBar2,$bar2);
@@ -72,10 +69,10 @@ while ($dia < $numDias) {
   array_push($listaCor2,$cor2);
   array_push($listaCor3,$cor3);
 
-
   $dia++;
 }
 
+//converte array em string para ser inserido no chartJS
 $listaGraphBar1str = implode(",", $listaGraphBar1);
 $listaGraphBar2str = implode(",", $listaGraphBar2);
 $listaGraphLine1str = implode(",", $listaGraphLine1);
