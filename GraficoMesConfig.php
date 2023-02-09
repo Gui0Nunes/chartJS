@@ -1,5 +1,5 @@
 <?php
-/* Arquivo de configurações do backend do gráfico em PHP */
+/* Arquivo de configurações do backend PHP do gráfico em chartJS */
 $dataGet = trim($_GET['data']);//resgata data via get
 $dataGet2 = date('Y-m-d', strtotime($dataGet)); //data com ano-mes-dia
 $dataGet3 = date('Y-m', strtotime($dataGet)); //data com ano-mes
