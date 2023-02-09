@@ -1,3 +1,2 @@
 #Exemplo:
-
-https://guilhermenunes.com.br/projetos/JS/chartJS/
+<a href="https://guilhermenunes.com.br/projetos/JS/chartJS/" target="_blank">Exemplo</a>
